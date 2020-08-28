@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- colors true makes the colors show with pass / fail -->
+<!-- verbose true shows verbose error messages -->
+<!-- bootstrap tells it to load that file before running the tests -->
+<phpunit colors="true" verbose="true" bootstrap="vendor/autoload.php"> 
+	<testsuites>
+		<testsuite name="My First Tests">
+			<!-- you can also add .php to run all tests with that extention -->
+			<!-- or add the suffix attribute -->
+			<directory>tests</directory>
+		</testsuite>
+	</testsuites>
+</phpunit>
